@@ -2,7 +2,7 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8">
-  <title>เข้าร่วมคลาส BUU201</title>
+  <title>เข้าร่วมหลักสูตร Dobot Magician</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -29,10 +29,10 @@
 </head>
 <body>
   <div class="box">
-    <h2>เข้าร่วมคลาส BUU201</h2>
+    <h2>เข้าร่วมหลักสูตร Dobot Magician</h2>
     <p>กรอกรหัสเข้าร่วมคลาสเพื่อเข้าเรียน</p>
     <form onsubmit="checkCode(event)">
-      <input type="text" id="joinKey" placeholder=>
+      <input type="text" id="joinKey" placeholder="กรอกรหัส เช่น BUU201_2025">
       <button type="submit">เข้าสู่คลาส</button>
     </form>
     <p id="errorMsg" style="color:red; display:none; margin-top:10px;">รหัสไม่ถูกต้อง</p>
@@ -42,7 +42,7 @@
     function checkCode(e) {
       e.preventDefault();
       const input = document.getElementById('joinKey').value.trim();
-      const correctCode = 'BUU2025';  // ✅ ตั้งรหัสตรงนี้
+      const correctCode = 'BUU201_2025';  // ✅ ตั้งรหัสตรงนี้
 
       if (input === correctCode) {
         // ✅ ลิงก์คอร์สที่คุณให้มา
